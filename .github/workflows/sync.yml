@@ -40,7 +40,7 @@ jobs:
       #- name: Prepare to push  
       #  run: git branch -f Vip
       - name: Push changes
-        run: git push https://${{ github.token }}@github.com/tuthanika/YT-AT.git
+        run: git push https://${{ github.token }}@github.com/tuthanika/YT-AT-Mod.git
       - uses: gautamkrishnar/keepalive-workflow@v1 # using the workflow with default settings
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2

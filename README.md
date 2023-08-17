@@ -1,7 +1,7 @@
 
-# YT-AT <br/>[![YT-RE](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/Install.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/Install.yml) [![RE-AUTO](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/Auto.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/Auto.yml)
+# YT-AT <br/>[![YT-RE](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/Install.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/Install.yml) [![RE-AUTO](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/Auto.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/Auto.yml)
 
-# YT-EXT <br/>[![YT-EXT](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/XInstall.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/XInstall.yml) [![EXT-AUTO](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/XAuto.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod/actions/workflows/XAuto.yml)
+# YT-EXT <br/>[![YT-EXT](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/XInstall.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/XInstall.yml) [![EXT-AUTO](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/XAuto.yml/badge.svg)](https://github.com/tuthanika/YT-AT-Mod-Mod/actions/workflows/XAuto.yml)
 
 > Notes Error nearest: YT-EXT temporarily the apk source does not have an apkm file in some versions will repair itself if their source uploads the apkm file
 
@@ -39,7 +39,7 @@
 
 - You can build your own version with models suitable for your machine. 
 
-   > [Instructions](https://github.com/tuthanika/YT-AT-Mod/blob/Vip/.github/Tools/Auto.md)
+   > [Instructions](https://github.com/tuthanika/YT-AT-Mod-Mod/blob/Vip/.github/Tools/Auto.md)
 
 **Microg**
 ---
@@ -62,7 +62,7 @@
 
 - I don't know many languages, you can contribute languages ​​at the link below.
 
-   > [Language](https://github.com/tuthanika/YT-AT-Mod/tree/Vip/.github/Language)
+   > [Language](https://github.com/tuthanika/YT-AT-Mod-Mod/tree/Vip/.github/Language)
 
 - Or submit the language file to the issue.
 
