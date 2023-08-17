@@ -1,4 +1,4 @@
-# tuthanika
+# kakathic
 
 sudo rm -rf /usr/share/dotnet
 sudo rm -rf /opt/ghc

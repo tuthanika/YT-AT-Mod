@@ -48,7 +48,7 @@ jobs:
           TYPE: 'true'
           FEATURE: ${{ inputs.FEATURE }}
         run: |
-          # tuthanika
+          # kakathic
           . .github/install.sh
           . .github/YT.sh
       - name: Upload File
@@ -82,7 +82,7 @@ jobs:
           TYPE: 'false'
           FEATURE: ${{ inputs.FEATURE }}
         run: |
-          # tuthanika
+          # kakathic
           . .github/install.sh
           . .github/YT.sh
       - name: Upload File
@@ -110,7 +110,7 @@ jobs:
           AMOLED: 'true'
           FEATURE: ${{ inputs.FEATURE }}
         run: |
-          # tuthanika
+          # kakathic
           . .github/install.sh
           . .github/YT.sh
       - name: Upload File
@@ -145,7 +145,7 @@ jobs:
           AMOLED: 'true'
           FEATURE: ${{ inputs.FEATURE }}
         run: |
-          # tuthanika
+          # kakathic
           . .github/install.sh
           . .github/YT.sh
       - name: Upload File

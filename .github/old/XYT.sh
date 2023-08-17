@@ -23,7 +23,7 @@ uak1="$urrl$(Xem "$urrl/apk/$2" | grep -m1 'downloadButton' | tr ' ' '\n' | grep
 uak2="$urrl$(Xem "$uak1" | grep -m1 '>here<' | tr ' ' '\n' | grep -m1 'href=' | cut -d \" -f2 | sed 's|amp;||')"
 Taive "$uak2" "apk/$1"
 echo "Link: $uak2"
-[ "$(file apk/$1 | grep -cm1 'Zip')" == 1 ] && echo > "apk/$1.txt" || ( echo "! Lỗi tải file $1"; exit 1; ); }
+[ "$(file apk/$1 | grep -cm1 'Zip')" == 1 ] && echo > "apk/$1.txt"; }
 
 # Tải tool cli
 echo "- Tải tool cli, patches, integrations..."
@@ -52,6 +52,7 @@ echo
 
 java -jar "$lib1" -a "$lib3" -b "$lib2" -l --with-versions | grep -m1 "custom-playback-speed"
 echo
+chmod 777 $lib2
 
 # Load dữ liệu cài đặt 
 . $HOME/.github/options/Ytx.md
@@ -92,7 +93,7 @@ elif [ "$VERSION" == 'Autu' ];then
 VER="$Vidon"
 Kad=Auto
 V=U
-if [ "$(Xem https://github.com/tuthanika/YT-AT-Mod/releases/download/Up/Up-X${V}notes.json | grep -cm1 "${VER//./}")" == 1 ];then
+if [ "$(Xem https://github.com/'$GITHUB_REPOSITORY'/releases/download/Up/Up-X${V}notes.json | grep -cm1 "${VER//./}")" == 1 ];then
 echo
 echo "! Là phiên bản mới nhất."
 exit 0
@@ -187,7 +188,7 @@ cd $HOME
 # Tạo module.prop
 echo 'id=YouTube
 name=YouTube PiP Ext '$Kad'
-author=tuthanika
+author=kakathic
 description=Build '$(date)', YouTube edited tool by Revanced mod added disable play store updates, mod rounded pip window.
 version='$VER'
 versionCode='${VER//./}'
@@ -202,7 +203,7 @@ echo '{
 "changelog": "https://github.com/'$GITHUB_REPOSITORY'/releases/download/Up/Up-X'$V'notes.json"
 }' > "Up-X$V$ach$amoled2.json"
 
-echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/tuthanika/YT-AT-Mod/releases ' > Up-X${V}notes.json
+echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/kakathic/YT-AT/releases ' > Up-X${V}notes.json
 
 # Tạo module magisk
 cd $HOME/.github/Modun

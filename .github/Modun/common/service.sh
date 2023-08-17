@@ -1,4 +1,4 @@
-# tuthanika
+# kakathic
 RD="$RANDOM"
 while true; do
 [ -e /sdcard/Android ] && break || sleep 1

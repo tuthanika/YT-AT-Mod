@@ -1,4 +1,4 @@
-# tuthanika
+# kakathic
 
 checkYT(){
 for Tkvi in $( find /data/app | grep com.google.android.youtube | grep 'base.apk' ); do

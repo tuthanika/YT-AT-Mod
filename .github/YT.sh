@@ -194,7 +194,7 @@ cd $HOME
 # Tạo module.prop
 echo 'id=YouTube
 name=YouTube PiP '$Kad'
-author=tuthanika
+author=kakathic
 description=Build '$(date)', YouTube edited tool by Revanced mod added disable play store updates, mod rounded pip window.
 version='$VER'
 versionCode='${VER//./}'
@@ -209,7 +209,7 @@ echo '{
 "changelog": "https://github.com/'$GITHUB_REPOSITORY'/releases/download/Up/Up-Z'$V'notes.json"
 }' > Up-Z$V$ach$amoled2.json
 
-echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/tuthanika/YT-AT-Mod/releases ' > Up-Z${V}notes.json
+echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/kakathic/YT-AT/releases ' > Up-Z${V}notes.json
 
 # Tạo module magisk
 cd $HOME/.github/Modun

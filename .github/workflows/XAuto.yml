@@ -10,8 +10,8 @@ on:
 permissions: write-all
 jobs:
   build1:
-    name: 'Buid arm64 root'
-    if: github.repository == 'tuthanika/YT-AT-Mod' && github.ref == 'refs/heads/Vip'
+    name: 'Buid arm root'
+    if: github.repository == 'tuthanika/YT-AT' && github.ref == 'refs/heads/Vip'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
           distribution: 'zulu'
       - name: See build
         run: |
-          # tuthanika
+          # kakathic
           if [ -z "$VERSION" ];then
           DEVICE='armeabi-v7a'
           DEV='Stable'
@@ -45,8 +45,8 @@ jobs:
           files: Up*.json
           prerelease: true
   build2:
-    name: 'Buid arm64 no-root'
-    if: github.repository == 'tuthanika/YT-AT-Mod' && github.ref == 'refs/heads/Vip'
+    name: 'Buid arm no-root'
+    if: github.repository == 'tuthanika/YT-AT' && github.ref == 'refs/heads/Vip'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -57,7 +57,7 @@ jobs:
           distribution: 'zulu'
       - name: See build
         run: |
-          # tuthanika
+          # kakathic
           if [ -z "$VERSION" ];then
           DEVICE='armeabi-v7a'
           DEV='Stable'
@@ -73,8 +73,8 @@ jobs:
           tag_name: X${{ env.V }}${{ env.VER }}
           files: Up/*
   build3:
-    name: 'Buid arm64 amoled root'
-    if: github.repository == 'tuthanika/YT-AT-Mod' && github.ref == 'refs/heads/Vip'
+    name: 'Buid arm amoled root'
+    if: github.repository == 'tuthanika/YT-AT' && github.ref == 'refs/heads/Vip'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -85,7 +85,7 @@ jobs:
           distribution: 'zulu'
       - name: See build
         run: |
-          # tuthanika
+          # kakathic
           if [ -z "$VERSION" ];then
           DEVICE='armeabi-v7a'
           DEV='Stable'
@@ -109,8 +109,8 @@ jobs:
           files: Up*.json
           prerelease: true
   build4:
-    name: 'Buid arm64 amoled no-root'
-    if: github.repository == 'tuthanika/YT-AT-Mod' && github.ref == 'refs/heads/Vip'
+    name: 'Buid arm amoled no-root'
+    if: github.repository == 'tuthanika/YT-AT' && github.ref == 'refs/heads/Vip'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -121,7 +121,7 @@ jobs:
           distribution: 'zulu'
       - name: See build
         run: |
-          # tuthanika
+          # kakathic
           if [ -z "$VERSION" ];then
           DEVICE='armeabi-v7a'
           DEV='Stable'

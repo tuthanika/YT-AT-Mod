@@ -1,4 +1,4 @@
-# tuthanika
+# KAKATHIC
 
 # Để true để bỏ qua Mount system
 SKIPMOUNT=false
@@ -77,7 +77,7 @@ ui_print
 
 offCH
 
-[ "$(Getp author)" == 'tuthanika' ] || abort "Copyright infringement"
+[ "$(Getp author)" == 'kakathic' ] || abort "Copyright infringement"
 
 if [ -z "$(pm path com.google.android.youtube)" ];then
 ui_print2 "Failure"
