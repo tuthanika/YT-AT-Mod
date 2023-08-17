@@ -21,7 +21,7 @@ jobs:
       - name: Merge Upstream
         run: |
           set +x
-          git remote add -f upstream "https://github.com/kakathic/YT-AT" &&
+          git remote add -f upstream "https://github.com/kakathic/YT-AT-Mod" &&
           git remote -v &&
           git branch --all &&
           git config --list &&

@@ -6,16 +6,15 @@ lib3="lib/revanced-integrations.apk"
 # Tải tool sta
 pbsta(){
 Vsion1="$(Xem https://github.com/$1 | grep -om1 ''$1'/releases/tag/.*\"' | sed -e 's|dev|zzz|g' -e 's|v||g' -e 's|zzz|dev|g' -e 's|\"||g')"
-Taive "https://github.com/$1/releases/download/v${Vsion1##*/}/$1-${Vsion1##*/}$3.$2" "lib/$1.$2"; 
-
-echo "- Url: https://github.com/$1/releases/download/v${Vsion1##*/}/$1-${Vsion1##*/}$3.$2
+Taive "https://github.com/$1/releases/download/v${Vsion1##*/}/$2-${Vsion1##*/}$4.$3" "lib/$2.$3"; 
+echo "- Url: https://github.com/$1/releases/download/v${Vsion1##*/}/$2-${Vsion1##*/}$4.$3
 "
 }
- 
+
 # tải tool dev
 pbdev(){
 Vsion2="$(Xem https://github.com/$1/releases | grep -om1 ''$1'/releases/tag/.*dev*..\"' | sed -e 's|dev|zzz|g' -e 's|v||g' -e 's|zzz|dev|g' -e 's|\"||g')"
-Taive "https://github.com/$1/releases/download/v${Vsion2##*/}/$1-${Vsion2##*/}$3.$2" "lib/$1.$2"; }
+Taive "https://github.com/$1/releases/download/v${Vsion2##*/}/$2-${Vsion2##*/}$4.$3" "lib/$2.$3"; }
 
 # tải apk
 TaiYT(){
@@ -59,7 +58,7 @@ chmod 777 $lib2
 . $HOME/.github/options/Ytx.md
 
 # lấy dữ liệu phiên bản mặc định
-echo "- Lấy dữ liệu phiên bản YouTube..."
+echo "- Patches YouTube mới nhất..."
 for kck in $Vik; do
 Vidon="$(java -jar "$lib1" -a "$lib3" -b "$lib2" -l --with-versions | grep -m1 "$kck" | tr ' ' '\n' | sed -e "s| |\n|g" | tail -n2 | sed -e "s|\n||g")"
 [ "$Vidon" ] && break
@@ -110,7 +109,7 @@ Upenv Kad "$Kad"
 Upenv VER "$VER"
 echo
 
-echo "- Tải YouTube $VER apk apks..."
+echo "- Tải YouTube $VER apk, apks..."
 # Tải YouTube apk
 kkk1="google-inc/youtube/youtube-${VER//./-}-release/youtube-${VER//./-}-2-android-apk-download"
 kkk2="google-inc/youtube/youtube-${VER//./-}-release/youtube-${VER//./-}-android-apk-download"
@@ -123,7 +122,7 @@ Loading apk/YouTube.apk.txt apk/YouTube.apks.txt
 
 # Xem xét apk
 if [ "$(unzip -l apk/YouTube.apk | grep -cm1 'base.apk')" == 1 ];then
-echo "- Thay đổi apks thành apk."
+echo "! Thay đổi apks thành apk."
 mv apk/YouTube.apk apk/YouTube.apk2
 mv apk/YouTube.apks apk/YouTube.apk
 mv apk/YouTube.apk2 apk/YouTube.apks
@@ -141,6 +140,7 @@ mv -f Tav/lib/$DEVICE Tav/lib/$ach
 unzip -qo apk/YouTube.apks 'base.apk' -d Tav
 zip -qr apk/YouTube.apk -d $lib
 
+#if [ "$(java -jar "$lib1" -a "$lib3" -b "$lib2" -l --with-versions | grep -m1 "custom-playback-speed" | grep -cm1 "$VER")" != 1 ]; then
 # Xử lý revanced patches
 if [ "$Vidon" != "$VER" ];then
 echo "- Chuyển đổi phiên bản $VER"
@@ -154,6 +154,7 @@ rm -fr $lib2
 zip -qr "$HOME/$lib2" *
 cd $HOME
 fi
+#fi
 
 # MOD YouTube 
 (
@@ -212,7 +213,7 @@ echo '{
 "changelog": "https://github.com/'$GITHUB_REPOSITORY'/releases/download/Up/Up-X'$V'notes.json"
 }' > "Up-X$V$ach$amoled2.json"
 
-echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/kakathic/YT-AT/releases ' > Up-X${V}notes.json
+echo 'Update '$(date)', YouTube: '$VER', Version: '${VER//./}', Download: https://github.com/kakathic/YT-AT-Mod/releases ' > Up-X${V}notes.json
 
 # Tạo module magisk
 cd $HOME/.github/Modun
