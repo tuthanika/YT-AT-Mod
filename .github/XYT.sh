@@ -10,7 +10,7 @@ Taive "https://github.com/$1/releases/download/v${Vsion1##*/}/$2-${Vsion1##*/}$4
 echo "- Url: https://github.com/$1/releases/download/v${Vsion1##*/}/$2-${Vsion1##*/}$4.$3
 "
 }
- 
+
 # tải tool dev
 pbdev(){
 Vsion2="$(Xem https://github.com/$1/releases | grep -om1 ''$1'/releases/tag/.*dev*..\"' | sed -e 's|dev|zzz|g' -e 's|v||g' -e 's|zzz|dev|g' -e 's|\"||g')"
