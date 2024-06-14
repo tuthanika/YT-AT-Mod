@@ -1,15 +1,19 @@
 name: GitlabSync
 
 on:
-  - push
-  - delete
+  push:
+  workflow_dispatch:
+  pull_request:
+  schedule:
+    - cron: '0 16 * * *'
+    # scheduled for 23:00 GMT+7 everyday
 
 jobs:
   merge-upstream:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
         with:
           fetch-depth: 0
       - name: Setup committer
